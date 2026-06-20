@@ -1,0 +1,142 @@
+{
+  "k_escolhido": 9,
+  "kmeans_metrics": [
+    {
+      "k": 2,
+      "inertia": 5584047.381461111,
+      "silhouette": 0.2462224506223243,
+      "davies_bouldin": 1.720592849431045,
+      "calinski_harabasz": 5860.526102839103
+    },
+    {
+      "k": 3,
+      "inertia": 4419282.409998069,
+      "silhouette": 0.2624003679639501,
+      "davies_bouldin": 1.4234145055484635,
+      "calinski_harabasz": 6364.815209738238
+    },
+    {
+      "k": 4,
+      "inertia": 3706305.546222634,
+      "silhouette": 0.2610638497533561,
+      "davies_bouldin": 1.2458602676353536,
+      "calinski_harabasz": 6390.828766759257
+    },
+    {
+      "k": 5,
+      "inertia": 3231736.0119661246,
+      "silhouette": 0.2730792676344764,
+      "davies_bouldin": 1.1966748034919796,
+      "calinski_harabasz": 6185.817654303611
+    },
+    {
+      "k": 6,
+      "inertia": 2803666.6193377483,
+      "silhouette": 0.2782081316206567,
+      "davies_bouldin": 1.0462190644082874,
+      "calinski_harabasz": 6338.48566796974
+    },
+    {
+      "k": 7,
+      "inertia": 2511630.146767023,
+      "silhouette": 0.2948024439799225,
+      "davies_bouldin": 1.0744779047445545,
+      "calinski_harabasz": 6293.474937173703
+    },
+    {
+      "k": 8,
+      "inertia": 2210949.6412595217,
+      "silhouette": 0.31409281996668154,
+      "davies_bouldin": 1.0709253842557702,
+      "calinski_harabasz": 6568.296330851952
+    },
+    {
+      "k": 9,
+      "inertia": 2013701.9166943487,
+      "silhouette": 0.3172166146916781,
+      "davies_bouldin": 1.0297772223956232,
+      "calinski_harabasz": 6548.500402629202
+    },
+    {
+      "k": 10,
+      "inertia": 2028391.4747689657,
+      "silhouette": 0.27307422703259915,
+      "davies_bouldin": 1.1776683524798175,
+      "calinski_harabasz": 5754.895795780621
+    }
+  ],
+  "silhouette_k": 0.3172166146916781,
+  "densidade": {
+    "amostra": 60000,
+    "dbscan": [
+      {
+        "eps": 0.2,
+        "min_samples": 10,
+        "n_clusters": 112,
+        "ruido_pct": 2.9
+      },
+      {
+        "eps": 0.2,
+        "min_samples": 25,
+        "n_clusters": 114,
+        "ruido_pct": 24.5
+      },
+      {
+        "eps": 0.3,
+        "min_samples": 10,
+        "n_clusters": 34,
+        "ruido_pct": 0.8
+      },
+      {
+        "eps": 0.3,
+        "min_samples": 25,
+        "n_clusters": 67,
+        "ruido_pct": 3.8
+      },
+      {
+        "eps": 0.5,
+        "min_samples": 10,
+        "n_clusters": 1,
+        "ruido_pct": 0.1
+      },
+      {
+        "eps": 0.5,
+        "min_samples": 25,
+        "n_clusters": 1,
+        "ruido_pct": 0.2
+      }
+    ],
+    "hdbscan": [
+      {
+        "min_cluster_size": 100,
+        "n_clusters": 34,
+        "ruido_pct": 56.6
+      },
+      {
+        "min_cluster_size": 250,
+        "n_clusters": 14,
+        "ruido_pct": 72.7
+      },
+      {
+        "min_cluster_size": 500,
+        "n_clusters": 4,
+        "ruido_pct": 80.6
+      }
+    ],
+    "hdbscan_disponivel": true
+  },
+  "n_exploratorio": 1805961,
+  "features": [
+    "lat",
+    "lon",
+    "hora_sin",
+    "hora_cos"
+  ],
+  "arquivos": {
+    "elbow": "reports/figures/elbow_kmeans.png",
+    "silhouette": "reports/figures/silhouette_kmeans.png",
+    "mapa_clusters": "reports/maps/mapa_clusters.html",
+    "clusters_3d": "reports/figures/clusters_3d.html",
+    "cluster_summary": "reports/cluster_summary.csv"
+  }
+}

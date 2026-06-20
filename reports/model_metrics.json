@@ -1,0 +1,232 @@
+{
+  "n_treino": 930909,
+  "n_teste": 310303,
+  "n_classes": 20,
+  "classes": [
+    "APREENSAO DE ENTORPECENTES",
+    "EXTORSAO MEDIANTE SEQUESTRO",
+    "FURTO - OUTROS",
+    "FURTO DE CARGA",
+    "FURTO DE VEICULO",
+    "HOMICIDIO CULPOSO OUTROS",
+    "HOMICIDIO CULPOSO POR ACIDENTE DE TRANSITO",
+    "HOMICIDIO DOLOSO",
+    "LATROCINIO",
+    "LESAO CORPORAL CULPOSA - OUTRAS",
+    "LESAO CORPORAL CULPOSA POR ACIDENTE DE TRANSITO",
+    "LESAO CORPORAL DOLOSA",
+    "LESAO CORPORAL SEGUIDA DE MORTE",
+    "PORTE DE ARMA",
+    "PORTE DE ENTORPECENTES",
+    "ROUBO - OUTROS",
+    "ROUBO DE CARGA",
+    "ROUBO DE VEICULO",
+    "TENTATIVA DE HOMICIDIO",
+    "TRAFICO DE ENTORPECENTES"
+  ],
+  "features": [
+    "lat",
+    "lon",
+    "hora_sin",
+    "hora_cos"
+  ],
+  "melhor_modelo": "random_forest",
+  "selecionado_por": "accuracy",
+  "modelos": {
+    "dummy_most_frequent": {
+      "accuracy": 0.3617657579849373,
+      "balanced_accuracy": 0.05,
+      "f1_macro": 0.02656593146535403,
+      "f1_weighted": 0.19221288666279396,
+      "top2_accuracy": 0.37445657953677536,
+      "top3_accuracy": 0.3759261109302843,
+      "fit_seconds": 0.5
+    },
+    "dummy_prior": {
+      "accuracy": 0.3617657579849373,
+      "balanced_accuracy": 0.05,
+      "f1_macro": 0.02656593146535403,
+      "f1_weighted": 0.19221288666279396,
+      "top2_accuracy": 0.695094794442851,
+      "top3_accuracy": 0.811883868348034,
+      "fit_seconds": 0.5
+    },
+    "logistic_regression": {
+      "accuracy": 0.4042725980734959,
+      "balanced_accuracy": 0.05786620736589624,
+      "f1_macro": 0.04737449572822737,
+      "f1_weighted": 0.3303788359020095,
+      "top2_accuracy": 0.6948208686348505,
+      "top3_accuracy": 0.8134146302162725,
+      "fit_seconds": 37.3
+    },
+    "random_forest": {
+      "accuracy": 0.45670199772480446,
+      "balanced_accuracy": 0.07096968379185895,
+      "f1_macro": 0.06457481307714918,
+      "f1_weighted": 0.39596858672949337,
+      "top2_accuracy": 0.7139022181545135,
+      "top3_accuracy": 0.827491194090937,
+      "fit_seconds": 45.3
+    },
+    "hist_gradient_boosting": {
+      "accuracy": 0.44252875415319864,
+      "balanced_accuracy": 0.07081822917131335,
+      "f1_macro": 0.066844103552884,
+      "f1_weighted": 0.37621602104404833,
+      "top2_accuracy": 0.7042406937735053,
+      "top3_accuracy": 0.81876746277026,
+      "fit_seconds": 16.2
+    },
+    "hist_gradient_boosting_balanced": {
+      "accuracy": 0.15340812045001176,
+      "balanced_accuracy": 0.16290090157594178,
+      "f1_macro": 0.06360421689187579,
+      "f1_weighted": 0.2026317928306552,
+      "top2_accuracy": 0.2687212176485564,
+      "top3_accuracy": 0.36971927438664787,
+      "fit_seconds": 29.4
+    }
+  },
+  "classification_report_melhor": {
+    "APREENSAO DE ENTORPECENTES": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 608.0
+    },
+    "EXTORSAO MEDIANTE SEQUESTRO": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 83.0
+    },
+    "FURTO - OUTROS": {
+      "precision": 0.4453105218135158,
+      "recall": 0.6291125656221902,
+      "f1-score": 0.5214899943099399,
+      "support": 103433.0
+    },
+    "FURTO DE CARGA": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 131.0
+    },
+    "FURTO DE VEICULO": {
+      "precision": 0.4191738908720041,
+      "recall": 0.1587748344370861,
+      "f1-score": 0.23031200592390977,
+      "support": 36240.0
+    },
+    "HOMICIDIO CULPOSO OUTROS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 20.0
+    },
+    "HOMICIDIO CULPOSO POR ACIDENTE DE TRANSITO": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 572.0
+    },
+    "HOMICIDIO DOLOSO": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 380.0
+    },
+    "LATROCINIO": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 42.0
+    },
+    "LESAO CORPORAL CULPOSA - OUTRAS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 619.0
+    },
+    "LESAO CORPORAL CULPOSA POR ACIDENTE DE TRANSITO": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 14108.0
+    },
+    "LESAO CORPORAL DOLOSA": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 20620.0
+    },
+    "LESAO CORPORAL SEGUIDA DE MORTE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 22.0
+    },
+    "PORTE DE ARMA": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 632.0
+    },
+    "PORTE DE ENTORPECENTES": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 844.0
+    },
+    "ROUBO - OUTROS": {
+      "precision": 0.47118995553369536,
+      "recall": 0.6315062757779025,
+      "f1-score": 0.5396942613091341,
+      "support": 112257.0
+    },
+    "ROUBO DE CARGA": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 2374.0
+    },
+    "ROUBO DE VEICULO": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 12924.0
+    },
+    "TENTATIVA DE HOMICIDIO": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 456.0
+    },
+    "TRAFICO DE ENTORPECENTES": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 3938.0
+    },
+    "accuracy": 0.45670199772480446,
+    "macro avg": {
+      "precision": 0.06678371841096076,
+      "recall": 0.07096968379185895,
+      "f1-score": 0.06457481307714918,
+      "support": 310303.0
+    },
+    "weighted avg": {
+      "precision": 0.3678502490993798,
+      "recall": 0.45670199772480446,
+      "f1-score": 0.39596858672949337,
+      "support": 310303.0
+    }
+  },
+  "arquivos": {
+    "modelo": "models/crime_classifier.joblib",
+    "label_encoder": "models/label_encoder.joblib",
+    "scaler": "models/preprocessing_pipeline.joblib",
+    "confusion_matrix": "reports/figures/confusion_matrix.png"
+  }
+}

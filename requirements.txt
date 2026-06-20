@@ -1,0 +1,20 @@
+# Dependências do projeto.  Instalação:  pip install -r requirements.txt
+# Python 3.11+ (o pin scikit-learn>=1.8 exige Python >=3.11; testado em 3.12).
+
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+seaborn>=0.12
+plotly>=5.18          # visualização 3D interativa
+folium>=0.15          # mapas interativos
+joblib>=1.3           # carregar/salvar o modelo
+openpyxl>=3.1         # leitura dos .xlsx brutos da SSP/SP (pipeline.py)
+jupyter>=1.0          # notebooks
+nbconvert>=7.0        # execução headless dos notebooks
+
+# scikit-learn fixado em 1.8.x: é a versão que serializou os modelos em
+# models/*.joblib (carregar o pickle em outra major pode falhar) e é a que tem
+# sklearn.cluster.HDBSCAN. Se você (re)treinar localmente, qualquer 1.8.x serve.
+# clustering.py funciona mesmo sem HDBSCAN (fallback para KMeans + DBSCAN).
+scikit-learn>=1.8,<1.9

@@ -1,0 +1,22 @@
+# Garante que arquivos binários NUNCA recebam conversão de fim de linha
+# (evita corromper modelos, planilhas, imagens e dados comprimidos no checkout
+#  entre Windows/Linux) e silencia os avisos de CRLF do git nesta máquina.
+
+*.joblib  binary
+*.pptx    binary
+*.xlsx    binary
+*.bz2     binary
+*.png     binary
+*.pdf     binary
+*.md5sum  binary
+
+# Arquivos de texto: normaliza para LF no repositório
+*.py      text eol=lf
+*.md      text eol=lf
+*.txt     text eol=lf
+*.csv     text eol=lf
+*.json    text eol=lf
+*.html    text eol=lf
+*.ipynb   text eol=lf
+.gitignore   text eol=lf
+.gitattributes text eol=lf
